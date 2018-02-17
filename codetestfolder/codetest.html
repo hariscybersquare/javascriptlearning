@@ -1,0 +1,64 @@
+<html>
+    <head>
+<title>Code test </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="codetest.js"></script>
+
+</head>
+<body>
+
+
+        <div class="jumbotron text-center">
+                <h1>Enter the names and ranks. Click!</h1>
+                <p>This is a responsive page</p> 
+        </div>
+                
+        <div class="container form-inline">
+                <div class="row">
+                    <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                                <label for="rank">Rank:</label>
+                                <input type="number" class="form-control" id="rank">
+                    </div> 
+                    <button class="btn btn-primary" onclick="add_row();">Add</button>
+                    <button class="btn btn-success" id="btnRankOrder" onclick="rankOrder();">Rank Order</button>
+                    <button class="btn btn-success" id="reversebtnRankOrder" onclick="reverserankOrder();">Reverse Rank Order</button>
+                    <button class="btn btn-warning" id="btnAverageRank" onclick="averageRank();">Average Rank</button>
+                </div>
+                <div class="row">
+                    <div class="col-12">&nbsp;</div>
+                </div>
+                <div id = "averageRankdiv" style="display:none">
+                    <div class="row">
+                            <label for="name">Average Rank:</label>
+                            <button class="btn btn-warning" id="averageRank" >0</button>  
+                    </div>
+                    <div class="row">
+                            <div class="col-12">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-bordered" id="dataTable">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Rank</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+        </div>    
+
+</body>
+</html>
